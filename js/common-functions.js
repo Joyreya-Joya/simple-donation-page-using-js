@@ -29,6 +29,7 @@ function textNumber(id){
 // Calculation of Money 
 function takaDonate(addDonation, preDonate, id){
     let currentBalance = textNumber('current_balance');
+    const my_modal_1 = document.getElementById('my_modal_1');
 
     if(isNaN(addDonation)){
         alert('Write only Numbers!!');
@@ -43,7 +44,9 @@ function takaDonate(addDonation, preDonate, id){
         
         currentBalance = currentBalance - addDonation;
         document.getElementById('current_balance').innerText = currentBalance;
+        my_modal_1.showModal();
         transHistory(addDonation);
+      
         }
         else{
             alert('OPS! You do not have that much money')

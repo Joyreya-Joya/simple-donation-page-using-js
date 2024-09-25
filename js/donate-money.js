@@ -6,6 +6,7 @@ document.getElementById('donate_nkhli_btn')
         let addDonation = inputNumber('nkhaliDonation_input');
         let preDonate = textNumber('noakhali_total_donation');
         takaDonate(addDonation, preDonate, 'noakhali_total_donation');
+        document.getElementById('nkhaliDonation_input').value = ''; 
     });
 
 //FENI Donation Js Start
@@ -15,6 +16,8 @@ document.getElementById('donate_nkhli_btn')
         let addDonation = inputNumber('feniDonation_input');
         let preDonate = textNumber('feni_total_donation');
         takaDonate(addDonation, preDonate, 'feni_total_donation');
+        document.getElementById('feniDonation_input').value = ''; 
+        
     });
 
 //Quota Donation Js Start
@@ -24,6 +27,7 @@ document.getElementById('donate_quota_btn')
     let addDonation = inputNumber('quotaDonation_input');
     let preDonate = textNumber('quota_total_donation');
     takaDonate(addDonation, preDonate, 'quota_total_donation');
+    document.getElementById('quotaDonation_input').value = ''; 
 });
 
     
