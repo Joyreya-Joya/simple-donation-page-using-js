@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+
+    <!-- Fontawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontawesome link  -->
+
+    <!-- Google Fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Google Fonts link  -->
+
+    <!-- Tailwind and DaisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind and DaisyUI link -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        white: '#ffffff',
+                        lemon: '#B4F461',
+                        gray: '#F9F7F3',
+                        dark1: '#111111',
+                        dark2: '#111111b3',
+                        dark3: '#11111166',
+                        brdr_clr: '#1111114d',
+                        brdr_lght_clr: '#1111111a',
+                    },
+                    fontFamily: {
+                        lexend: "Lexend",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- custom CSS link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- custom CSS link  -->
+
+</head>
+
+<body class="font-lexend">
+    <!-- ------- Header Part start --------  -->
+    <!-- <header class="fixed top-0 w-full bg-white z-30 transition-all ease-linear duration-300"> -->
+    <header class="header_div ">
+        <section class="bg-gray">
+            <div class="w-11/12 mx-auto navbar min-h-36 lg:min-h-24 flex flex-col lg:flex-row">
+                <div class="navbar-start hidden lg:block">
+                    <a href="index.html"
+                        class="font-semibold text-dark1 text-xl btn bg-lemon rounded-lg h-12 px-8 border-none shadow-none hover:bg-lemon hover:scale-105">Home</a>
+                </div>
+                <div class="navbar-center">
+                    <div class="flex space-x-4 items-center justify-center">
+                        <img src="images/logo.png" alt="Logo" class="size-12">
+                        <h6 class="font-semibold text-xl text-dark1">Donate Bangladesh</h6>
+                    </div>
+                </div>
+
+                <div class="navbar-end w-full lg:w-6/12 justify-between lg:justify-end pt-4 lg:pt-0">
+                    <div class="lg:hidden">
+                        <a href="index.html"
+                            class="font-semibold text-dark1 text-lg btn bg-lemon rounded-lg h-4 px-8 border-none shadow-none hover:bg-lemon hover:scale-105">Home</a>
+                    </div>
+
+                    <div class="flex space-x-4  items-center justify-center ">
+                        <img src="images/coin.png" alt="coin" class="size-7">
+                        <h5 class="text-dark1 font-medium text-xl "><span id="current_balance" >5500</span> BDT</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <!-- ------- Header Part end --------  -->
+    <!-- -------------------------------------------- -->
+    <!-- ------- Main section start -----  -->
+    <main class="w-11/12 mx-auto pt-20 pb-20">
+     
+           <div class="flex flex-col gap-4 w-full">
+            <!-- ------1-------- -->
+            <div class="collapse collapse-arrow shadow-md rounded-lg border border-brdr_lght_clr bg-lime-100 ">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium text-dark1">What is the DOM (Document Object Model)?</div>
+                <div class="collapse-content bg-lime-50">
+                  <p class="pt-4 text-dark2">The DOM is a structured representation of the HTML document, acting as an interface that allows JavaScript to interact with and manipulate the webpage elements dynamically.
+                  </p>
+                </div>
+              </div>
+              <!-- ----------  -->
+            <!-- ------2-------- -->
+            <div class="collapse collapse-arrow shadow-md rounded-lg border border-brdr_lght_clr bg-lime-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an HTML element in the DOM using JavaScript?</div>
+                <div class="collapse-content bg-lime-50">
+                  <p class="pt-4 text-dark2">JavaScript offers methods like selecting an element by its ID, class, or tag name, allowing you to interact with that specific element.
+                  </p>
+                </div>
+              </div>
+              <!-- ----------  -->
+            <!-- ------3-------- -->
+            <div class="collapse collapse-arrow shadow-md rounded-lg border border-brdr_lght_clr bg-lime-100">
+                <input type="radio" name="my-accordion-2"  />
+                <div class="collapse-title text-xl font-medium">How can you create and insert a new element into the DOM?</div>
+                <div class="collapse-content bg-lime-50">
+                  <p class="pt-4 text-dark2">You can dynamically create a new element, then insert it into a specific part of the webpage, such as within the body or another element.</p>
+                </div>
+              </div>
+              <!-- ----------  -->
+            <!-- ------4-------- -->
+            <div class="collapse collapse-arrow shadow-md rounded-lg border border-brdr_lght_clr bg-lime-100">
+                <input type="radio" name="my-accordion-2"  />
+                <div class="collapse-title text-xl font-medium">How do you change the content of an HTML element using JavaScript?</div>
+                <div class="collapse-content bg-lime-50">
+                  <p class="pt-4 text-dark2">You can modify the text or HTML content of an element by accessing its properties, allowing for updates like changing text on a button or paragraph.
+                  </p>
+                </div>
+              </div>
+              <!-- ----------  -->
+            <!-- ------5-------- -->
+            <div class="collapse collapse-arrow shadow-md rounded-lg border border-brdr_lght_clr bg-lime-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How can you listen for and handle events on DOM elements?</div>
+                <div class="collapse-content bg-lime-50">
+                  <p class="pt-4 text-dark2">JavaScript allows you to attach event listeners to elements, so when a user performs an action, such as clicking a button, a specific function is triggered in response.
+                  </p>
+                </div>
+              </div>
+              <!-- ----------  -->
+              
+           </div>
+
+    </main>
+    <!-- ------- Main section  end -----  -->
+    <!-- -------------------------------------------- -->
+    <!-- -------Footer part start ----- -->
+    <footer class="h-24 bg-gray">
+
+    </footer>
+    <!-- -------Footer part end ----- -->
+
+
+
+    <!-- ------------- js links ----------  -->
+    <script src="js/sticky.js"></script>
+    <script src="js/common-functions.js"></script>
+    <script src="js/donate-money.js"></script>
+    <script src="js/action.js"></script>
+    <!-- ------------- js links ----------  -->
+</body>
+
+</html>
