@@ -18,15 +18,16 @@ document.getElementById('donate_nkhli_btn')
             document.getElementById('noakhali_total_donation').innerText = totalDonate;
 
 
+            transHistory(addDonation);
             //transection history
-            const currentDate = new Date().toString();
-            const div = document.createElement('div');
-            div.classList.add('flex', 'flex-col', 'bg-base-100', 'shadow-md', 'space-y-3', 'p-8', 'rounded-2xl', 'border', 'border-brdr_lght_clr');
-            div.innerHTML = `
-            <h3 class="text-dark1 font-bold text-xl">${addDonation} Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
-                    <p class="text-dark2 font-light text-base"> Date: ${currentDate}</p>`;
+            // const currentDate = new Date().toString();
+            // const div = document.createElement('div');
+            // div.classList.add('flex', 'flex-col', 'bg-base-100', 'shadow-md', 'space-y-3', 'p-8', 'rounded-2xl', 'border', 'border-brdr_lght_clr');
+            // div.innerHTML = `
+            // <h3 class="text-dark1 font-bold text-xl">${addDonation} Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+            //         <p class="text-dark2 font-light text-base"> Date: ${currentDate}</p>`;
 
-            document.getElementById('transection_div').appendChild(div);
+            // document.getElementById('transection_div').appendChild(div);
 
             }
             else{
