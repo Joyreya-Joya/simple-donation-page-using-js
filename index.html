@@ -103,7 +103,7 @@
                 <div class="space-y-6">
                     <div class="flex space-x-3  items-center justify-center bg-brdr_lght_clr w-40 h-11 rounded-lg">
                         <img src="images/coin.png" alt="coin" class="size-6">
-                        <h5 class="text-dark2 font-medium text-base"><span id="donate_balance">0</span> BDT</h5>
+                        <h5 class="text-dark2 font-medium text-base"><span id="noakhali_total_donation">0</span> BDT</h5>
                     </div>
 
                     <h3 class="text-dark1 font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -114,9 +114,9 @@
                 </div>
 
                 <form class="space-y-4">
-                    <input type="text" placeholder="Write Donation Amount!" class="input input-bordered w-full"
+                    <input id="nkhaliDonation_input" type="text" placeholder="Write Donation Amount!" class="input input-bordered w-full"
                         required />
-                    <button
+                    <button id="donate_nkhli_btn"
                         class="font-semibold text-xl btn bg-lemon rounded-lg h-14 w-full border-none shadow-none hover:bg-lemon hover:scale-[.98]">Donate
                         Now</button>
                 </form>
@@ -195,17 +195,12 @@
 
         <!-- ===========Transection Tab Start ============ -->
         <div id="trans_history" class="hidden">
-            <div class="flex flex-col gap-6 ">
-                <div class="flex flex-col bg-base-100 shadow-md space-y-3 p-8 rounded-2xl border border-brdr_lght_clr">
+            <div id="transection_div" class="flex flex-col gap-6 ">
+                <!-- <div class="flex flex-col bg-base-100 shadow-md space-y-3 p-8 rounded-2xl border border-brdr_lght_clr">
                     <h3 class="text-dark1 font-bold text-xl">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
                     <p class="text-dark2 font-light text-base"> Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh
                         Standard Time)</p>
-                </div>
-                <div class="flex flex-col bg-base-100 shadow-md space-y-3 p-8 rounded-2xl border border-brdr_lght_clr">
-                    <h3 class="text-dark1 font-bold text-xl">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
-                    <p class="text-dark2 font-light text-base"> Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh
-                        Standard Time)</p>
-                </div>
+                </div>-->
             </div>
     
         </div>
@@ -226,6 +221,7 @@
     <!-- ------------- js links ----------  -->
     <script src="js/sticky.js"></script>
     <script src="js/common-functions.js"></script>
+    <script src="js/donate-money.js"></script>
     <script src="js/action.js"></script>
     <!-- ------------- js links ----------  -->
 </body>
