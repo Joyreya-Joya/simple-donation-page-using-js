@@ -3,18 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ /* sticky header css start */
 .sticky_header{
    position: fixed;
    width: 100%;
    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.76); 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); 
-   animation: nav_landing 0.35s ease-out;
-   -webkit-animation: nav_landing 0.35s ease-out;
+   background-color: rgba(255, 255, 255, 0.76);
+   backdrop-filter: blur(12px);
+   -webkit-backdrop-filter: blur(12px);
+   animation: nav_landing 0.8s ease-out;
+   -webkit-animation: nav_landing 0.8s ease-out;
    z-index: 9999;
 }
+
   @keyframes nav_landing {
     from {
         top: -40%;
@@ -23,10 +24,14 @@
      top: 0%;
 }
   }
-
+ /* sticky header css end */
+  
+/* active btn css */
 .activeBtn{
   background: #B4F461!important;
   border: none!important;
   color: #111111!important;
 }
+
+
   

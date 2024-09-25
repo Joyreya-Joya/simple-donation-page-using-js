@@ -1,3 +1,4 @@
+//showing donation section
 document.getElementById('show_donation_sec')
     .addEventListener('click', function () {
         active_btn('show_donation_sec');
@@ -5,6 +6,7 @@ document.getElementById('show_donation_sec')
         
     });
 
+//showing Transection History section
 document.getElementById('show_transaction_history')
     .addEventListener('click', function () {
         active_btn('show_transaction_history');

@@ -56,8 +56,8 @@
     <!-- <header class="fixed top-0 w-full bg-white z-30 transition-all ease-linear duration-300"> -->
     <header class="header_div ">
         <section class="bg-gray">
-            <div class="w-11/12 mx-auto navbar min-h-24">
-                <div class="navbar-start">
+            <div class="w-11/12 mx-auto navbar min-h-36 lg:min-h-24 flex flex-col lg:flex-row">
+                <div class="navbar-start hidden lg:block">
                     <a href="#"
                         class="font-semibold text-dark1 text-xl btn bg-lemon rounded-lg h-12 px-8 border-none shadow-none hover:bg-lemon hover:scale-105">Blog</a>
                 </div>
@@ -67,16 +67,22 @@
                         <h6 class="font-semibold text-xl text-dark1">Donate Bangladesh</h6>
                     </div>
                 </div>
-                <div class="navbar-end">
-                    <div class="flex space-x-4  items-center justify-center">
+
+                <div class="navbar-end w-full lg:w-6/12 justify-between lg:justify-end pt-4 lg:pt-0">
+                    <div class="lg:hidden">
+                        <a href="#"
+                            class="font-semibold text-dark1 text-lg btn bg-lemon rounded-lg h-4 px-8 border-none shadow-none hover:bg-lemon hover:scale-105">Blog</a>
+                    </div>
+
+                    <div class="flex space-x-4  items-center justify-center ">
                         <img src="images/coin.png" alt="coin" class="size-7">
-                        <h5 class="text-dark1 font-medium text-xl"><span id="current_balance">5500</span> BDT</h5>
+                        <h5 class="text-dark1 font-medium text-xl "><span id="current_balance" >5500</span> BDT</h5>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="flex justify-center items-center space-x-4 pt-14 pb-8">
+        <div class="tab_btns flex justify-center items-center space-x-4 pt-14 pb-8">
 
             <!-- <button id="show_donation_sec"
                 class="font-semibold text-xl btn bg-lemon rounded-lg h-14 w-40 border-none shadow-none hover:bg-lemon hover:scale-105 text-dark1">Donation</button> -->
@@ -92,16 +98,16 @@
     <!-- ------- Header Part end --------  -->
     <!-- -------------------------------------------- -->
     <!-- ------- Main section start -----  -->
-    <main class="w-11/12 mx-auto space-y-10 pb-20">
+    <main class="w-11/12 mx-auto pb-20 min-h-[50vh]">
         <!-- ================== Donation Tab start================ -->
-        <div id="donation_section">
+        <div id="donation_section" class="space-y-10 ">
             <!-- -------donation card 1 start ---------  -->
-        <div class="flex justify-between bg-base-100 shadow-md space-x-10 p-10 rounded-2xl border border-brdr_lght_clr">
-            <figure class="w-5/12">
+        <div class="flex lg:flex-row flex-col justify-between bg-base-100 shadow-md lg:space-x-10 space-y-8 lg:p-10 p-6 pb-12 rounded-2xl border border-brdr_lght_clr">
+            <figure class="w-full lg:w-5/12">
                 <img src="images/noakhali.png" alt="Shoes" class="rounded-xl w-full" />
             </figure>
 
-            <div class=" w-7/12 space-y-10">
+            <div class="w-full lg:w-7/12 space-y-10">
                 <div class="space-y-6">
                     <div class="flex space-x-3  items-center justify-center bg-brdr_lght_clr w-40 h-11 rounded-lg">
                         <img src="images/coin.png" alt="coin" class="size-6">
@@ -127,16 +133,16 @@
         <!-- -------donation card 1 ENd ---------  -->
         <!-- -==============-==============------------------------------------------ =====================-->
         <!-- -------donation card 2 start ---------  -->
-        <div class="flex justify-between bg-base-100 shadow-md space-x-10 p-10 rounded-2xl border border-brdr_lght_clr">
-            <figure class="w-5/12">
+        <div class="flex lg:flex-row flex-col justify-between bg-base-100 shadow-md lg:space-x-10 space-y-8 lg:p-10 p-6 pb-12 rounded-2xl border border-brdr_lght_clr">
+            <figure class="w-full lg:w-5/12">
                 <img src="images/feni.png" alt="Shoes" class="rounded-xl w-full" />
             </figure>
 
-            <div class=" w-7/12 space-y-10">
+            <div class="w-full lg:w-7/12 space-y-10">
                 <div class="space-y-6">
                     <div class="flex space-x-3  items-center justify-center bg-brdr_lght_clr w-40 h-11 rounded-lg">
                         <img src="images/coin.png" alt="coin" class="size-6">
-                        <h5 class="text-dark2 font-medium text-base"><span id="donate_balance">0</span> BDT</h5>
+                        <h5 class="text-dark2 font-medium text-base"><span id="feni_total_donation">0</span> BDT</h5>
                     </div>
 
                     <h3 class="text-dark1 font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h3>
@@ -149,9 +155,9 @@
                 </div>
 
                 <form class="space-y-4">
-                    <input type="text" placeholder="Write Donation Amount!" class="input input-bordered w-full"
+                    <input id="feniDonation_input" type="text" placeholder="Write Donation Amount!" class="input input-bordered w-full"
                         required />
-                    <button
+                    <button id="donate_feni_btn"
                         class="font-semibold text-xl btn bg-lemon rounded-lg h-14 w-full border-none shadow-none hover:bg-lemon hover:scale-[.98] ">Donate
                         Now</button>
                 </form>
@@ -160,16 +166,16 @@
         <!-- -------donation card 2 ENd ---------  -->
         <!-- -==============-==============------------------------------------------ =====================-->
         <!-- -------donation card 3 start ---------  -->
-        <div class="flex justify-between bg-base-100 shadow-md space-x-10 p-10 rounded-2xl border border-brdr_lght_clr">
-            <figure class="w-5/12">
+        <div class="flex lg:flex-row flex-col justify-between bg-base-100 shadow-md lg:space-x-10 space-y-8 lg:p-10 p-6 pb-12 rounded-2xl border border-brdr_lght_clr">
+            <figure class="w-full lg:w-5/12">
                 <img src="images/quota-protest.png" alt="Shoes" class="rounded-xl w-full" />
             </figure>
 
-            <div class=" w-7/12 space-y-10">
+            <div class="w-full lg:w-7/12 space-y-10">
                 <div class="space-y-6">
                     <div class="flex space-x-3  items-center justify-center bg-brdr_lght_clr w-40 h-11 rounded-lg">
                         <img src="images/coin.png" alt="coin" class="size-6">
-                        <h5 class="text-dark2 font-medium text-base"><span id="donate_balance">0</span> BDT</h5>
+                        <h5 class="text-dark2 font-medium text-base"><span id="quota_total_donation">0</span> BDT</h5>
                     </div>
 
                     <h3 class="text-dark1 font-bold text-xl">Aid for Injured in the Quota Movement</h3>
@@ -183,9 +189,9 @@
                 </div>
 
                 <form class="space-y-4">
-                    <input type="text" placeholder="Write Donation Amount!" class="input input-bordered w-full"
+                    <input id="quotaDonation_input" type="text" placeholder="Write Donation Amount!" class="input input-bordered w-full"
                         required />
-                    <button
+                    <button id="donate_quota_btn"
                         class="font-semibold text-xl btn bg-lemon rounded-lg h-14 w-full border-none shadow-none hover:bg-lemon hover:scale-[.98]">Donate
                         Now</button>
                 </form>
